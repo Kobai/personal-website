@@ -1,0 +1,31 @@
+.home-container {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0) ), url('../assets/img/home-desktop.jpg');
+  background-size: cover;
+
+  .text-container {
+    position: absolute;
+    left: 2%;
+    top: 24%;
+
+    .name {
+      font-size: 4rem;
+      font-weight: 400;
+      color: white;
+      margin-bottom: -10px;
+    }
+
+    .subtext {
+      p {
+        margin-left: 10px;
+        margin: 4px;
+        font-size: 1.5rem;
+        color: white;
+      }
+    }
+
+  }
+}
+
