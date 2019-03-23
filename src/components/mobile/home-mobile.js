@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
-import './Home.scss';
+import React, { Component } from 'react'
+import './home-mobile.scss';
 
-
-class Home extends Component {
-
+class HomeMobile extends Component {
   render() {
     return (
       <div>
-        <div className='home-container'>
+        <div className='home-container-mobile'>
           <div className='text-container'>
-            <p className='name'>Victor Kobayashi</p>
+            <p className='name'>Victor K.</p>
             <div className='subtext'>
               <p>CS @ UWaterloo</p>
               <p>Software Engineer</p>
@@ -17,8 +15,8 @@ class Home extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Home;
+export default HomeMobile;
