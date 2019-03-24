@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
 import './experience-desktop.scss';
-import Card from '@material-ui/core/Card';
-import CardHeader from '@material-ui/core/CardHeader'
-import CardContent from '@material-ui/core/CardContent'
-import Avatar from '@material-ui/core/Avatar'
-import Typography from '@material-ui/core/Typography'
-import CardActions from '@material-ui/core/CardActions'
-import CardActionArea from '@material-ui/core/CardActionArea';
-import Chip from '@material-ui/core/Chip'
-
+import ExpCard from '../common/exp-card'
+import data from '../../assets/exp.json';
 
 class ExperienceDesktop extends Component {
   render() {
@@ -17,37 +10,9 @@ class ExperienceDesktop extends Component {
         <div className='experience-container-desktop'>
           <h1>Heres where I've been recently</h1>
           <div className='card-container'>
-            <Card>
-              <CardHeader
-                avatar={
-                  <Avatar
-                    src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/1036116-cd826183bd79280c658db461c14febe0-medium_jpg.jpg?buster=1468536628"
-                    alt='S'
-                  />
-                }
-                title='SnapTravel: Software Engineering Intern'
-                subheader='Jan-Apr 2019'
-              />
-              <CardActionArea>
-                <CardContent>
-                  <Typography paragraph>
-                    Implemented Server-Side-Rendering compatibility into
-                    numerous <b>React</b> components, improving the average page loading time by over <b>400%</b>
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Typography paragraph>
-                  Technologies:
-                </Typography>
-                <Chip className='chip'
-                  avatar={<Avatar src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'/>}
-                  label='React'
-                  color='primary'
-                  variant='outlined'
-                />
-              </CardActions>
-            </Card>
+            {data.map(item => 
+              <ExpCard info={item}/>
+            )}
           </div>
         </div>
       </div>

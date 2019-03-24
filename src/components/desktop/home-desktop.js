@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './home-desktop.scss';
-import Tooltip from '@material-ui/core/Tooltip'
 
 
 class HomeDesktop extends Component {
