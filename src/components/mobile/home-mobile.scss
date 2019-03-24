@@ -4,7 +4,7 @@
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), url('../../assets/img/home-mobile.png');
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../assets/img/home-mobile.png');
   background-size: cover;
 
   .text-container {
@@ -14,6 +14,11 @@
       font-weight: 400;
       color: white;
       margin-bottom: -10px;
+      -webkit-animation: fadein 1s; 
+      -moz-animation: fadein 1s; 
+      -ms-animation: fadein 1s; 
+      -o-animation: fadein 1s; 
+      animation: fadein 1s;
     }
 
     .subtext {
@@ -22,9 +27,38 @@
         margin: 4px;
         font-size: 1.5rem;
         color: white;
+        -webkit-animation: fadein 2s; 
+        -moz-animation: fadein 2s; 
+        -ms-animation: fadein 2s; 
+        -o-animation: fadein 2s; 
+        animation: fadein 2s;
       }
     }
+  }
 
+  @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  @-moz-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  @-webkit-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  @-ms-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  @-o-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
   }
 }
 
