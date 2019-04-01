@@ -7,11 +7,11 @@
       "Implemented Server-Side-Rendering compatibility into numerous React components, improving the average page loading time by over 400%"
     ],
     "technologies": [
-      "React", "Flask", "Postgres"
+      "React", "Flask", "Node", "Postgres"
     ]
   },
   {
-    "logo": "https://pbs.twimg.com/profile_images/690167668733677570/GYpLbgek_400x400.png",
+    "logo": "https://lh4.googleusercontent.com/-eTlpMMXHUqg/AAAAAAAAAAI/AAAAAAAAAAA/5rgwXGut6dU/w60-h60-p-rp-mo-br100/photo.jpg",
     "title": "TemboSocial: Software Developer Intern",
     "duration": "May-Aug 2018",
     "accomplishments": [

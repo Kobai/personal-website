@@ -30,7 +30,11 @@ class ExpCard extends Component {
 
   render() {
     return (
-      <Card style={{margin: '20px 10px 20px 10px'}}>
+      <Card style={{
+        'margin': '20px 10px 20px 10px', 
+        'borderRadius': '10px',
+        'boxShadow': '0 10px 20px rgba(0,0,0,0.19)'
+        }}>
         <CardHeader
           avatar={
             <Avatar
