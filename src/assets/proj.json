@@ -1,0 +1,7 @@
+[
+  {
+    "img": "http://sfwallpaper.com/images/all-pokemon-wallpaper-8.jpg",
+    "title": "PokeType",
+    "summary": "Convolutional neural network classifying a pokemon's primary type based on its sprite image"
+  }
+]
