@@ -5,13 +5,12 @@ import CardContent from '@material-ui/core/CardContent'
 import Avatar from '@material-ui/core/Avatar'
 import Typography from '@material-ui/core/Typography'
 import CardActions from '@material-ui/core/CardActions'
-import CardActionArea from '@material-ui/core/CardActionArea';
 import Chip from '@material-ui/core/Chip'
 
 class ExpCard extends Component {
 
   renderAccomplishments() {
-    return this.props.info.accomplishments.map(a =>
+    return this.props.accomplishments.map(a =>
       <Typography paragraph>
         {a}
       </Typography>
@@ -19,7 +18,7 @@ class ExpCard extends Component {
   }
 
   renderTechs() {
-    return this.props.info.technologies.map(tech => 
+    return this.props.technologies.map(tech => 
       <Chip className='chip'
         label={tech}
         color='primary'
@@ -33,23 +32,21 @@ class ExpCard extends Component {
       <Card style={{
         'margin': '20px 10px 20px 10px', 
         'borderRadius': '10px',
-        'boxShadow': '0 10px 20px rgba(0,0,0,0.19)'
+        'boxShadow': '0 10px 20px rgba(0,0,0,0.19)',
         }}>
         <CardHeader
           avatar={
             <Avatar
-              src={this.props.info.logo}
+              src={this.props.logo}
               alt='S'
             />
           }
-          title={this.props.info.title}
-          subheader={this.props.info.duration}
+          title={this.props.title}
+          subheader={this.props.duration}
         />
-        <CardActionArea>
           <CardContent>
             {this.renderAccomplishments()}
           </CardContent>
-        </CardActionArea>
         <CardActions 
           style={{'overflow-x': navigator.userAgent.match(/Mobile/i) ? 'scroll' : 'hidden'}}>
           <Typography paragraph>

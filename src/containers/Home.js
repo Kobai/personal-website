@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import HomeDesktop from '../components/desktop/home-desktop';
 import HomeMobile from '../components/mobile/home-mobile';

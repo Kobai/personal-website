@@ -11,7 +11,7 @@ class ExperienceMobile extends Component {
           <h1>Here's where I've been recently</h1>
           <div className='card-container'>
             {data.map(item =>
-              <ExpCard info={item}/>
+              <ExpCard {...item}/>
             )}
           </div>
         </div>
