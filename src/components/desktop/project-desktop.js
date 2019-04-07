@@ -9,9 +9,11 @@ class ProjectDesktop extends Component {
     return (
       <div className='project-container-desktop'>
         <h1>These are some of the projects I've done</h1>
-        <div className='card-container'>
-          {data.map(item => 
-            <ProjCard {...item} />
+        <div className='gallery'>
+          {data.map(item =>
+            <div className='card-container'>
+              <ProjCard {...item} />
+            </div>
           )}
         </div>
       </div>

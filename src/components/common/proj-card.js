@@ -6,6 +6,7 @@ import { CardMedia, ExpansionPanel } from '@material-ui/core';
 import CardActions from '@material-ui/core/CardActions'
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import Chip from '@material-ui/core/Chip'
 import axios from 'axios'
 
 class ProjCard extends Component {
@@ -31,10 +32,6 @@ class ProjCard extends Component {
     })
   }
 
-  handleSubmit = () => {
-
-  }
-
   render() {
     return (
       <Card style={{
@@ -58,7 +55,14 @@ class ProjCard extends Component {
           </Typography>
         </CardContent>
         <CardActions>
-          {this.props.title === 'PokeType' && (
+          {this.props.techs.map(tech =>
+            <Chip
+              label={tech}
+              color='primary'
+              variant='outlined'
+            />
+          )}
+          {/* {false && (
             <div style={{ 'width': '100%' }}>
               <ExpansionPanel>
                 <ExpansionPanelSummary>
@@ -71,7 +75,7 @@ class ProjCard extends Component {
                 </ExpansionPanelDetails>
               </ExpansionPanel>
             </div>
-          )}
+          )} */}
         </CardActions>
       </Card>
     )
