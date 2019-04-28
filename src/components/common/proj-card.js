@@ -4,8 +4,6 @@ import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
 import { CardMedia, ExpansionPanel } from '@material-ui/core';
 import CardActions from '@material-ui/core/CardActions'
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Chip from '@material-ui/core/Chip'
 import axios from 'axios'
 

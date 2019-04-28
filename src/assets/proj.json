@@ -7,8 +7,8 @@
   },
   {
     "img": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/589/220/datas/gallery.jpg",
-    "title": "PokeType",
-    "summary": "Convolutional neural network classifying a pokemon's primary type based on its sprite image",
-    "techs": ["Python", "Keras"]
+    "title": "Beat",
+    "summary": "Game",
+    "techs": ["Ionic", "Angular"]
   }
 ]
