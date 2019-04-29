@@ -4,7 +4,9 @@
     "title": "SnapTravel: Software Engineering Intern",
     "duration": "Jan-Apr 2019",
     "accomplishments": [
-      "Implemented Server-Side-Rendering compatibility into numerous React components, improving the average page loading time by over 400%"
+      "Implemented Server-Side-Rendering compatibility into numerous React components, improving the average page loading time by over 400%",
+      "Developed an internal bidding tool to submit and keep records of bids on multiple metasearch channels",
+      "Developed an internal pricing tool to allow easy markup of hotel prices based on the metasearch channel they came from"
     ],
     "technologies": [
       "React", "Flask", "Node", "Postgres"

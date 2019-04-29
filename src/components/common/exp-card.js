@@ -31,7 +31,6 @@ class ExpCard extends Component {
     return (
       <Card style={{
         'margin': '20px 10px 20px 10px', 
-        'borderRadius': '10px',
         'boxShadow': '0 10px 20px rgba(0,0,0,0.19)',
         }}>
         <CardHeader
@@ -49,9 +48,6 @@ class ExpCard extends Component {
           </CardContent>
         <CardActions 
           style={{'overflow-x': navigator.userAgent.match(/Mobile/i) ? 'scroll' : 'hidden'}}>
-          <Typography paragraph>
-            Technologies:
-          </Typography>
           { this.renderTechs() }
         </CardActions>
       </Card>

@@ -8,7 +8,7 @@ class ProjectDesktop extends Component {
   render() {
     return (
       <div className='project-container-desktop'>
-        <h1>These are some of the projects I've done</h1>
+        <h1>{"< Projects />"}</h1>
         <div className='gallery'>
           {data.map(item =>
             <div className='card-container'>

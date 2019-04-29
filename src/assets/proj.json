@@ -8,7 +8,13 @@
   {
     "img": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/589/220/datas/gallery.jpg",
     "title": "Beat",
-    "summary": "Game",
+    "summary": "Multiplayer music mobile game that lets players score by selecting a song that matches the beat of the previous song",
     "techs": ["Ionic", "Angular"]
+  },
+  {
+    "img": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/677/817/datas/gallery.jpg",
+    "title": "Shuffle",
+    "summary": "Party app allowing users to submit song preferences through a mobile app to help the host play more popular songs",
+    "techs": ["React", "MongoDB"]
   }
 ]
