@@ -3,7 +3,6 @@ import './project-desktop.scss';
 import ProjCard from '../common/proj-card'
 import data from '../../assets/proj.json'
 
-
 class ProjectDesktop extends Component {
   render() {
     return (
