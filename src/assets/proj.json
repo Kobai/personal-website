@@ -3,18 +3,21 @@
     "img": "http://sfwallpaper.com/images/all-pokemon-wallpaper-8.jpg",
     "title": "PokeType",
     "summary": "Convolutional neural network classifying a pokemon's primary type based on its sprite image",
-    "techs": ["Python", "Keras"]
+    "techs": ["Python", "Keras"],
+    "visit": "https://github.com/Kobai/PokeType"
   },
   {
-    "img": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/589/220/datas/gallery.jpg",
+    "img": "https://i.imgur.com/rj68VDY.png",
     "title": "Beat",
     "summary": "Multiplayer music mobile game that lets players score by selecting a song that matches the beat of the previous song",
-    "techs": ["Ionic", "Angular"]
+    "techs": ["Ionic", "Angular"],
+    "visit": "https://devpost.com/software/beat"
   },
   {
-    "img": "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/677/817/datas/gallery.jpg",
+    "img": "https://i.imgur.com/kSlfPsf.png",
     "title": "Shuffle",
     "summary": "Party app allowing users to submit song preferences through a mobile app to help the host play more popular songs",
-    "techs": ["React", "MongoDB"]
+    "techs": ["React", "MongoDB"],
+    "visit": "https://devpost.com/software/shuffle-n9lwgv"
   }
 ]

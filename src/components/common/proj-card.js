@@ -47,6 +47,19 @@ class ProjCard extends Component {
             />
           )}
         </CardActions>
+        <CardActions style={{'backgroundColor': '#fafafa'}}>
+          <a 
+            style={{
+              'width': '100%', 
+              'textAlign': 'center',
+              'textDecoration': 'none',
+              'color': '#512da8',
+              'fontWeight': '500'
+            }}
+            href={this.props.visit}>
+            Visit
+         </a>
+        </CardActions>
       </Card>
     )
   }
