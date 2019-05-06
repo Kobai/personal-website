@@ -4,7 +4,7 @@ import Gallery from 'react-grid-gallery'
 class Pics extends Component {
   render() {
     const isMobile = navigator.userAgent.match(/Mobile/i)
-    let IMAGES = [
+    const IMAGES = [
       {
         src: "https://i.imgur.com/esJ99Ll.jpg",
         thumbnail: "https://i.imgur.com/esJ99Ll.jpg",
@@ -127,14 +127,14 @@ class Pics extends Component {
           'textAlign': 'center',
           'justifyContent': 'center'
         }}>
-          <h1>Click Click</h1>
+          <h1 style={{'fontWeight': '400'}}>{'*Click Click*'}</h1>
           <p style={{'color': '#757575'}}>
             Every now and then, I like taking pictures. Here are some of my favorites!
           </p>
-          <div style={{ 'width': '100%' }}>
+          <div style={{ 'width': isMobile ? '100%' : '70%' }}>
             <Gallery
               images={IMAGES}
-              enableLightbox={false}
+              enableLightbox={true}
               enableImageSelection={false} />
           </div>
         </div>
