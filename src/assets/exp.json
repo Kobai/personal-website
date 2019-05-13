@@ -6,7 +6,7 @@
     "accomplishments": [
       "Implemented Server-Side-Rendering compatibility into numerous React components, improving the average page loading time by over 400%",
       "Developed an internal bidding tool to submit and keep records of bids on multiple metasearch channels",
-      "Developed an internal pricing tool to allow easy markup of hotel prices based on the metasearch channel they came from"
+      "Developed an internal pricing tool to allow easy markup of hotel prices based on the metasearch channel users come from"
     ],
     "technologies": [
       "React", "Flask", "Node", "Postgres"

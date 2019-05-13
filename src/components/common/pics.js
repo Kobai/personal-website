@@ -131,7 +131,7 @@ class Pics extends Component {
           <p style={{'color': '#757575'}}>
             Every now and then, I like taking pictures. Here are some of my favorites!
           </p>
-          <div style={{ 'width': isMobile ? '100%' : '70%' }}>
+          <div style={{ 'width': isMobile ? '95%' : '70%' }}>
             <Gallery
               images={IMAGES}
               enableLightbox={true}
