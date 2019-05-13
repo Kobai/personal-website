@@ -8,15 +8,11 @@ class Project extends Component {
     const isMobile = navigator.userAgent.match(/Mobile/i)
     if(isMobile) {
       return (
-        <div>
-          <ProjectMobile/> 
-        </div>
+        <ProjectMobile/> 
       );
     } else {
       return (
-        <div>
-          <ProjectDesktop/>
-        </div>
+        <ProjectDesktop/>
       );
     }
   }

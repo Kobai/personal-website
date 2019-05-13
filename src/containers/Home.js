@@ -6,17 +6,13 @@ import HomeMobile from '../components/mobile/home-mobile';
 class Home extends Component {
   render() {
     const isMobile = navigator.userAgent.match(/Mobile/i)
-    if(isMobile) {
+    if (isMobile) {
       return (
-        <div>
-          <HomeMobile/> 
-        </div>
+        <HomeMobile />
       );
     } else {
       return (
-        <div>
-          <HomeDesktop/>
-        </div>
+        <HomeDesktop />
       );
     }
   }

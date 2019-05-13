@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Gallery from 'react-grid-gallery'
 
-class Pics extends Component {
+class PicsDesktop extends Component {
   render() {
     const isMobile = navigator.userAgent.match(/Mobile/i)
     const IMAGES = [
@@ -117,21 +117,25 @@ class Pics extends Component {
     return (
       <div style={{
         'display': 'block',
-        'width': '100%',
-        'height': '100vh',
+        'width': '70%',
+        'minHeight': '100vh',
+        'backgroundColor': 'white',
+        'margin': '30px',
+        'borderRadius': '10px'
       }}>
         <div style={{
           'display': 'flex',
           'flexDirection': 'column',
           'alignItems': 'center',
           'textAlign': 'center',
-          'justifyContent': 'center'
+          'justifyContent': 'center',
+          'padding': '10px'
         }}>
           <h1 style={{'fontWeight': '400'}}>{'*Click Click*'}</h1>
           <p style={{'color': '#757575'}}>
             Every now and then, I like taking pictures. Here are some of my favorites!
           </p>
-          <div style={{ 'width': isMobile ? '95%' : '70%' }}>
+          <div style={{ 'width': isMobile ? '95%' : '90%' }}>
             <Gallery
               images={IMAGES}
               enableLightbox={true}
@@ -143,4 +147,4 @@ class Pics extends Component {
   }
 }
 
-export default Pics;
+export default PicsDesktop;

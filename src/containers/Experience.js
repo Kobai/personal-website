@@ -6,17 +6,13 @@ import ExperienceMobile from '../components/mobile/experience-mobile';
 class Experience extends Component {
   render() {
     const isMobile = navigator.userAgent.match(/Mobile/i)
-    if(isMobile) {
+    if (isMobile) {
       return (
-        <div>
-          <ExperienceMobile/> 
-        </div>
+        <ExperienceMobile />
       );
     } else {
       return (
-        <div>
-          <ExperienceDesktop/>
-        </div>
+        <ExperienceDesktop />
       );
     }
   }

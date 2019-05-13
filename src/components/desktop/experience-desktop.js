@@ -6,14 +6,12 @@ import data from '../../assets/exp.json';
 class ExperienceDesktop extends Component {
   render() {
     return (
-      <div>
-        <div className='experience-container-desktop'>
-          <h1>{"Here's where I've been recently"}</h1>
-          <div className='card-container'>
-            {data.map(item => 
-              <ExpCard {...item}/>
-            )}
-          </div>
+      <div className='experience-container-desktop'>
+        <h1>{"Here's where I've been recently"}</h1>
+        <div className='card-container'>
+          {data.map(item =>
+            <ExpCard {...item} />
+          )}
         </div>
       </div>
     );
