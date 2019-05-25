@@ -10,8 +10,6 @@ class HomeDesktop extends Component {
           <div className='text-container'>
             <p className='name'>Victor Kobayashi</p>
             <div className='subtext'>
-              <p>CS @ UWaterloo</p>
-              <p>Software Engineer</p>
             </div>
           </div>
         </div>

@@ -118,7 +118,7 @@ class PicsDesktop extends Component {
       <div style={{
         'display': 'block',
         'width': '70%',
-        'minHeight': '100vh',
+        'paddingBottom': '40px',
         'backgroundColor': 'white',
         'margin': '30px',
         'borderRadius': '10px'
