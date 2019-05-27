@@ -23,7 +23,7 @@ class App extends Component {
         <Home />
         <Experience />
         <Project />
-        <Pics />
+	{/*<Pics />*/}
       </div>
     );
   }
