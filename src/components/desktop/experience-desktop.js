@@ -8,9 +8,11 @@ class ExperienceDesktop extends Component {
     return (
       <div className='experience-container-desktop'>
         <h1>{"Here's where I've been recently"}</h1>
-        <div className='card-container'>
+        <div className='gallery'>
           {data.map(item =>
-            <ExpCard {...item} />
+            <div className='card-container'>
+              <ExpCard {...item} />
+            </div>
           )}
         </div>
       </div>
