@@ -6,33 +6,54 @@
   justify-content: center;
   align-items: center;
   background-size: cover;
+  -webkit-animation: fadein 2s; 
+  -moz-animation: fadein 2s; 
+  -ms-animation: fadein 2s; 
+  -o-animation: fadein 2s; 
+  animation: fadein 2s;
 
   .text-container {
     margin-top: -100px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 5px;
+    text-align: center;
+    height: 40%;
+    padding-left: 100px;
+    padding-right: 100px;
     .name {
-      font-size: 6.5vh;
-      font-weight: 400;
-      color: white;
+      font-size: 5vh;
+      margin-top: 100px;
+      font-weight: 300;
+      color: #212121;
       margin-bottom: -10px;
-      -webkit-animation: fadein 1s; 
-      -moz-animation: fadein 1s; 
-      -ms-animation: fadein 1s; 
-      -o-animation: fadein 1s; 
-      animation: fadein 1s;
     }
 
     .subtext {
       p {
-        margin-left: 10px;
-        margin: 4px;
-        font-size: 3vh;
-        color: white;
-        -webkit-animation: fadein 2s; 
-        -moz-animation: fadein 2s; 
-        -ms-animation: fadein 2s; 
-        -o-animation: fadein 2s; 
-        animation: fadein 2s;
+        margin: 30px;
+        font-weight: 300;
+        font-size: 2.5vh;
+        color: #212121;
       }
+    }
+
+    .contact {
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      img {
+        height: 40px;
+        margin: 10px;
+        opacity: 0.75;
+      }
+      img:hover {
+        opacity: 1;
+      }
+    }
+    .arrow {
+      height: 20px;
+      margin-top: 20px;
+      animation: fadein infinite 2s linear;
     }
   }
 
