@@ -6,6 +6,8 @@
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "axios": "^0.18.0",
+    "browserslist": "^4.7.0",
+    "caniuse-lite": "^1.0.30000999",
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "react": "^16.8.4",
