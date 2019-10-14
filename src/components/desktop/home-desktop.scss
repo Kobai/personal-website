@@ -15,9 +15,9 @@
   .text-container {
     margin-top: -100px;
     background: rgba(255, 255, 255, 0.95);
-    border-radius: 5px;
+    border: solid 1px #757575;
+    border-radius: 10px;
     text-align: center;
-    height: 40%;
     padding-left: 100px;
     padding-right: 100px;
     .name {
@@ -57,8 +57,8 @@
       }
     }
     .arrow {
-      height: 20px;
-      margin-top: 20px;
+      height:40px;
+      margin-bottom: 10px;
       animation: fadein infinite 2s linear;
     }
   }

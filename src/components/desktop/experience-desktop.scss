@@ -4,34 +4,37 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  width: 100%;
   background-color: white;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
-  border-radius: 10px;
-  padding-bottom: 80px;
-  height: 70vh;
+  width: 70%;
+  min-height: 70vh;
   margin: 30px;
-
+  margin-top: 0px;
 
   h1 {
     margin-top: 50px;
-    font-weight: 400;
+    font-weight: 300;
     width: 100%;
     color: #212121;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
-  .gallery {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  .experience-container-card {
+    width: 100%;
+    padding-bottom: 40px;
+   
+    .gallery {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
 
-    .card-container {
-      width: 400px;
-      align-items: left;
-      text-align: left;
+      .card-container {
+        width: 80%;
+        align-items: left;
+        text-align: left;
+      }
     }
   }
+
 }

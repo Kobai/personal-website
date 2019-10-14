@@ -5,7 +5,6 @@ import Linkedin from '../../assets/img/linkedin.png'
 import Resume from '../../assets/img/resume.png'
 import DA from '../../assets/img/da.png'
 
-
 class HomeDesktop extends Component {
   render() {
     return (
@@ -29,7 +28,7 @@ class HomeDesktop extends Component {
                 <img src={Resume}/>
               </a>
             </div>
-            <img src={DA} className='arrow'/>
+            <img src={DA} className='arrow' />
           </div>
         </div>
       </div>

@@ -44,7 +44,7 @@ class ExpCard extends Component {
           subheader={this.props.duration}
         />
           <CardContent style={{
-            'height': '200px'
+            'minHeight': '100px'
           }}>
             {this.renderAccomplishments()}
           </CardContent>
