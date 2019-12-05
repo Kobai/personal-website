@@ -31,7 +31,8 @@ class ExpCard extends Component {
     return (
       <Card style={{
         'margin': '20px 10px 20px 10px', 
-        'boxShadow': '0 10px 20px rgba(0,0,0,0.19)',
+        'boxShadow': '0 5px 5px 0 rgba(154,160,185,.05), 0 5px 30px 0 rgba(166,173,201,.22)',
+        'borderRadius': '10px'
         }}>
         <CardHeader
           avatar={
