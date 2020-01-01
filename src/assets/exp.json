@@ -1,5 +1,18 @@
 [
   {
+    "logo": "https://rossintelligence.com/images/dark-logo.png",
+    "title": "ROSS Intelligence: Software Developer Intern",
+    "duration": "Sep-Dec 2019",
+    "accomplishments": [
+      "Trained entity recognition model to detect statute citations in legal cases with SpaCy",
+      "Created an AWS Lambda service that integrated SendGrid into ROSS's platform and provided event tracking on over 2000 emails per month",
+      "Planned and implemented one-time use ROSS sessions enabling privacy driven lawyers to experience the platform before committing to a trial"
+    ],
+    "technologies": [
+      "React", "FastAPI", "TypeScript", "PostgreSQL", "Grails", "TypeScript"
+    ]
+  },
+  {
     "logo": "https://d1qb2nb5cznatu.cloudfront.net/startups/i/1036116-cd826183bd79280c658db461c14febe0-medium_jpg.jpg?buster=1468536628",
     "title": "SnapTravel: Software Engineering Intern",
     "duration": "Jan-Apr 2019",
@@ -9,7 +22,7 @@
       "Developed an internal pricing tool to allow easy markup of hotel prices based on the metasearch channel users come from"
     ],
     "technologies": [
-      "React", "Flask", "Node", "Postgres"
+      "React", "Flask", "Node", "PostgreSQL", "Redis"
     ]
   },
   {

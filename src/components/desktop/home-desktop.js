@@ -24,11 +24,13 @@ class HomeDesktop extends Component {
               <a href="https://ca.linkedin.com/in/vkobay">
                 <img src={Linkedin}/>
               </a>
-              <a href="https://drive.google.com/file/d/1wyTVmV1qqUbSaHbh_2lZnhprU0me9eYR/view?usp=sharing">
+              <a href="https://drive.google.com/file/d/1rAOD1xooPDD7h56dxwkl3K45H3wQFYv-/view?usp=sharing">
                 <img src={Resume}/>
               </a>
             </div>
-            <img src={DA} className='arrow' />
+            <a href='#experience'>
+              <img src={DA} className='arrow' />
+            </a>
           </div>
         </div>
       </div>

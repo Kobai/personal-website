@@ -6,7 +6,7 @@ import data from '../../assets/exp.json';
 class ExperienceDesktop extends Component {
   render() {
     return (
-      <div className='experience-container-desktop'>
+      <div className='experience-container-desktop' id='experience'>
         <h1>{"Here's where I've been recently"}</h1>
         <div className='experience-container-card'>
           <div className='gallery'>
