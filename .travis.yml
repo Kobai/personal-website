@@ -3,6 +3,7 @@ node_js:
   - 7
 deploy:
   provider: pages
+  github_token: $GITHUB_TOKEN
   skip_cleanup: true
   keep_history: true
   on:
