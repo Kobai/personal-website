@@ -2,7 +2,7 @@
   {
     "img": "https://raw.githubusercontent.com/Kobai/name-that-genre/master/cm.PNG",
     "title": "Name That Genre",
-    "summary": "Embedding + CNN model that classifies a song's genre by its lyrics. Achieves an accuracy of 64% and F1 scores of up to 0.79",
+    "summary": "Embedding + CNN model that classifies a song's genre by its lyrics. Achieves F1 scores of up to 0.79",
     "visit": "https://github.com/Kobai/name-that-genre"
   },
   {

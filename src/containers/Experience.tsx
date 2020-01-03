@@ -24,15 +24,6 @@ const Title = styled.div`
   border-radius: 10px;
   margin-bottom: 20px;
   transition: all .5s ease-in-out;
-
-  &:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  }
-
-  a {
-    text-decoration: none;
-    color: #414141;
-  }
 `
 
 interface BuildCardProps {
@@ -57,13 +48,11 @@ const Experience = () => {
   return (
     <Frame id='experience'>
       <Title>
-        <a href='#experience'>
-          Some of My Recent Experiences
-        </a>
+        <span style={{'color': '#9e9e9e'}}>#</span> Some of My Recent Experiences
       </Title>
-      <BuildCard exp={'Ross'}/>
-      <BuildCard exp={'Snaptravel'}/>
-      <BuildCard exp={'Tembosocial'}/>
+      <BuildCard exp={'Ross'} />
+      <BuildCard exp={'Snaptravel'} />
+      <BuildCard exp={'Tembosocial'} />
     </Frame>
   )
 }
