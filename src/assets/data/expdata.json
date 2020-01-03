@@ -1,0 +1,39 @@
+{
+  "Ross": {
+    "name": "ROSS Intelligence",
+    "role": "Software Development Intern",
+    "location": "Toronto, Ontario, Canada",
+    "description": " As a software development intern at ROSS, my role was to build product related features which involved creating numerous microservices from scratch. Accomplishments include",
+    "accomplishments": [
+      "Trained an entity recognition model to detect statute citations in legal cases",
+      "Provided event tracking on over 2000 outbound emails per month",
+      "Planned and implemented one-time use ROSS sessions",
+      "Developed a group discounts feature",
+      "Added domain authentication to sales engagement platforms"
+    ]
+  },
+  "Snaptravel": {
+    "name": "SnapTravel",
+    "role": "Software Engineering Intern",
+    "location": "Toronto, Ontario, Canada",
+    "description": "During my co-op at SnapTravel, I was a part of the Growth Engineering team where my role was to support the growth team by building internal tools and preparing A/B test experiments. Accomplishments include",
+    "accomplishments": [
+      "Analyzed the user threat detection model’s false-positive cases",
+      "Improved the platform’s lighthouse score over 400%",
+      "Created a single interface to bid on all marketing channels",
+      "Developed a per-channel pricing tool to enable flexible hotel pricing changes",
+      "Built Google ads landing page variants for A/B testing",
+      "Modernized SnapTravel's A/B testing dashboard"
+    ]
+  },
+  "Tembosocial": {
+    "name": "TemboSocial",
+    "role": "Enterprise Software Developer",
+    "location": "Toronto, Ontario, Canada",
+    "description": "At TemboSocial, I was responsible for improving the front facing product. Such tasks included",
+    "accomplishments": [
+      "Implemented file attachments for email reports to improve report accessibility",
+      "Redesigned dozens of elements in the application to optimize the user experience"
+    ]
+  }
+}

@@ -1,24 +1,16 @@
 .App {
   text-align: center;
-  background-color: #f9faff;
-}
-
-.bg {
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  border: none;
-  background-color: #f9faff;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .App-header {
