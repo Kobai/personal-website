@@ -24,6 +24,10 @@ const Container = styled.div`
     transform: scale(1.03);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }
+
+  @media only screen and (max-width: 1000px) {
+    width: 95%;
+  }
 `
 
 const TextContainer = styled.div`
@@ -32,7 +36,14 @@ const TextContainer = styled.div`
   text-align: left;
 
   li {
+    color: #212121; 
     font-size: 18px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    li {
+      font-size: 16px;
+    }
   }
 `
 
@@ -40,6 +51,10 @@ const Title = styled.p`
   font-size: 26px;
   font-weight: 600;
   margin: 0;
+
+  @media only screen and (max-width: 1000px) {
+    font-size: 20px;
+  }
 `
 
 const Role = styled.span`
@@ -47,17 +62,24 @@ const Role = styled.span`
   font-size: 26px;
   font-weight: 400;
   margin: 0;
+  @media only screen and (max-width: 1000px) {
+    font-size: 20px;
+  }
 `
 
 const Subtitle = styled.p`
   margin: 0;
-  font-size: 16;
+  font-size: 16px;
   color: #9e9e9e;
 `
 
 const Description = styled.p`
   font-size: 18px;
   width: 90%;
+  color: #212121; 
+  @media only screen and (max-width: 1000px) {
+    font-size: 16px;
+  }
 `
 
 const ExpCard = (props: expProps) => {

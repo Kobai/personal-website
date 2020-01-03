@@ -35,11 +35,13 @@ const StyleImg = styled.img`
   width: 350px;
   height: 200px;
   border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   object-fit: cover;
 `
 
 const TextContainer = styled.div`
-  padding: 20px;
+  padding: 15px;
 `
 
 const Title = styled.p`
@@ -49,6 +51,7 @@ const Title = styled.p`
 `
 
 const Content = styled.p`
+  color: #212121; 
 `
 
 const ProjCard = (props: projProps) => {

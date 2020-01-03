@@ -20,6 +20,12 @@ const Container = styled.div`
   &:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }
+
+  @media only screen and (max-width: 1000px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
 `
 
 const Name = styled.p`
@@ -28,6 +34,11 @@ const Name = styled.p`
   font-weight: 300;
   color: black;
   margin-bottom: -10px
+
+  @media only screen and (max-width: 1000px) {
+    margin-top: 40px;
+    font-size: 36px;
+  }
 `
 
 const Subtext = styled.p`

@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import ExpCard from '../components/experience/ExpCard'
 import expdata from '../assets/data/expdata.json'
+import Title from '../components/core/Title'
 
 const Frame = styled.div`
   height: 100%;
@@ -11,19 +12,6 @@ const Frame = styled.div`
   align-items: center;
   background: #f9faff;
   padding-bottom: 100px;
-`
-
-const Title = styled.div`
-  font-size: 26px;
-  height: 30px;
-  max-width: 600px;
-  background: white;
-  padding: 15px 60px;
-  border: solid 1px #fefefe;
-  box-shadow: 0 5px 5px 0 rgba(154,160,185,.05), 0 5px 30px 0 rgba(166,173,201,.22);
-  border-radius: 10px;
-  margin-bottom: 20px;
-  transition: all .5s ease-in-out;
 `
 
 interface BuildCardProps {
@@ -47,9 +35,7 @@ const BuildCard = (props: BuildCardProps) => {
 const Experience = () => {
   return (
     <Frame id='experience'>
-      <Title>
-        <span style={{'color': '#9e9e9e'}}>#</span> Some of My Recent Experiences
-      </Title>
+      <Title title={'Recent Experiences'}/>
       <BuildCard exp={'Ross'} />
       <BuildCard exp={'Snaptravel'} />
       <BuildCard exp={'Tembosocial'} />
