@@ -1,12 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
-interface projProps {
-  img: string
-  title: string
-  summary: string
-  visit: string
-}
+import { projProps } from '../../schema'
 
 
 const Container = styled.div`
