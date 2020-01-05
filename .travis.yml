@@ -1,13 +1,15 @@
 language: node_js
 node_js:
-  - 7
+  - "stable"
+cache:
+  directories:
+  - node_modules
 script:
-  - echo "skipping tests"
+  - npm run build
 deploy:
-  provider: script
-  script: bash scripts/deploy.sh
-  github_token: $GITHUB_TOKEN
+  provider: pages
   skip_cleanup: true
-  keep_history: true
+  github_token: $GITHUB_TOKEN
+  local_dir: build
   on:
     branch: master
