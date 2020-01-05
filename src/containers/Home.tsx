@@ -12,6 +12,7 @@ const Frame = styled.div`
 `
 
 const Home = () => {
+  console.log(process.env.TEST)
   return (
     <Frame>
       <Intro/>
