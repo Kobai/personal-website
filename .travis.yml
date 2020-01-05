@@ -2,9 +2,10 @@ language: node_js
 node_js:
   - 7
 deploy:
-  provider: pages
+  provider: script
+  script: bash scripts/deploy.sh
   github_token: $GITHUB_TOKEN
   skip_cleanup: true
   keep_history: true
   on:
-    branch: master
+    branch: gh-pages
