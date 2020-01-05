@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import ExpCard from '../components/experience/ExpCard'
-import expdata from '../assets/data/expdata.json'
 import Title from '../components/core/Title'
+import firebase from '../firebase.js'
+import { expProps } from '../schema'
 
 const Frame = styled.div`
   height: 100%;
@@ -14,31 +15,28 @@ const Frame = styled.div`
   padding-bottom: 100px;
 `
 
-interface BuildCardProps {
-  exp: string
-}
-
-const BuildCard = (props: BuildCardProps) => {
-  // @ts-ignore
-  const content = expdata[props.exp]
-  return (
-    <ExpCard
-      name={content.name}
-      location={content.location}
-      role={content.role}
-      description={content.description}
-      accomplishments={content.accomplishments}
-    />
-  )
-}
-
 const Experience = () => {
+  const experienceRef = firebase.database().ref('experiences')
+  const [experiences, setExperiences] = React.useState<Array<expProps>>([])
+
+  if (experiences.length === 0) {
+    experienceRef.on('value', (snapshot) => {
+      setExperiences(snapshot.val())
+    })
+  }
+
   return (
     <Frame id='experience'>
-      <Title title={'Recent Experiences'}/>
-      <BuildCard exp={'Ross'} />
-      <BuildCard exp={'Snaptravel'} />
-      <BuildCard exp={'Tembosocial'} />
+      <Title title={'Recent Experiences'} />
+      {experiences.map(item => 
+        <ExpCard
+          name={item.name}
+          location={item.location}
+          role={item.role}
+          description={item.description}
+          accomplishments={item.accomplishments}
+        />
+      )}
     </Frame>
   )
 }

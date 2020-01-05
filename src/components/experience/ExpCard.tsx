@@ -1,13 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { expProps } from '../../schema'
 
-interface expProps {
-  name: string
-  location: string
-  role: string
-  description: string
-  accomplishments: Array<string>
-}
 
 const Container = styled.div`
   width: 70%;

@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import ProjCard from '../components/project/ProjCard'
-import projdata from '../assets/data/projdata.json'
 import Title from '../components/core/Title'
+import firebase from '../firebase.js'
+import { projProps } from '../schema'
 
 const Frame = styled.div`
   height: 100%;
@@ -22,12 +23,22 @@ const CardContainer = styled.div`
   padding-bottom: 50px;
 `
 
+
 const Project = () => {
+  const projectRef = firebase.database().ref('projects')
+  const [projects, setProjects] = React.useState<Array<projProps>>([])
+
+  if (projects.length === 0) {
+    projectRef.on('value', (snapshot) => {
+      setProjects(snapshot.val())
+    })
+  }
+
   return (
     <Frame id='project'>
-      <Title title={'Cool Projects'}/>
+      <Title title={'Cool Projects'} />
       <CardContainer>
-        {projdata.map(item =>
+        {projects.map(item =>
           <ProjCard
             img={item.img}
             title={item.title}
