@@ -3,7 +3,7 @@ node_js:
   - "stable"
 env:
   global: 
-    - TEST=test
+    - REACT_APP_BLAH=test
 cache:
   directories:
   - node_modules

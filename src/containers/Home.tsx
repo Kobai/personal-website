@@ -12,7 +12,7 @@ const Frame = styled.div`
 `
 
 const Home = () => {
-  console.log(process.env.TEST)
+  console.log(process.env.REACT_APP_BLAH)
   return (
     <Frame>
       <Intro/>
