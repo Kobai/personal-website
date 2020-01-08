@@ -17,12 +17,27 @@ const Container = styled.div`
   @media only screen and (max-width: 1000px) {
     font-size: 20px;
   }
+
+  .pound {
+    border-bottom: 2px solid transparent;
+    transition : border-bottom 200ms ease-out;
+  }
+  &:hover {
+    .pound {
+      border-bottom: 2px solid #2196f3;
+    }
+  }
+`
+
+const Pound = styled.span`
+  color: #9e9e9e;
+  margin-right: 5px;
 `
 
 
 const Title = (props: any) => (
   <Container>
-    <span style={{'color': '#9e9e9e'}}>#</span> {props.title}
+    <Pound className='pound'>#</Pound> {props.title}
   </Container>
 )
 

@@ -20,8 +20,13 @@ const Container = styled.div`
   }
 
   &:hover {
-    transform: scale(1.03);
+    transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+    .title {
+      color: #2196f3;
+      text-decoration: underline;
+    }
   }
 `
 
@@ -54,7 +59,7 @@ const ProjCard = (props: projProps) => {
       <a href={props.visit}>
         <StyleImg src={props.img} />
         <TextContainer>
-          <Title>{props.title}</Title>
+          <Title className='title'>{props.title}</Title>
           <Content>{props.summary}</Content>
         </TextContainer>
       </a>

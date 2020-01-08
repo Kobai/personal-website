@@ -9,15 +9,24 @@ const Wrapper = styled.div`
   display:flex;
   flex-direction: row;
   justify-content: center;
+  transition: all .2s ease-in-out;
+`
+
+const IconWrapper = styled.a`
+  border-bottom: 3px solid transparent;
+  transition : border-bottom 200ms ease-in;
+  &:hover {
+    border-bottom: 3px solid #2196f3;
+  }
 `
 
 const Icon = styled.img`
   height: 30px;
   margin: 10px;
-  opacity: 0.75;
+  opacity: 0.8;
 
   @keyframes fadeIn {
-    from {opacity: 0.75;}
+    from {opacity: 0.8;}
     to {opacity: 1;}
   }
   &:hover {
@@ -30,15 +39,15 @@ const Icon = styled.img`
 const Contact = () => {
   return (
     <Wrapper>
-      <a href='https://github.com/kobai'>
+      <IconWrapper href='https://github.com/kobai'>
         <Icon src={Octocat} />
-      </a>
-      <a href='https://ca.linkedin.com/in/vkobay'>
+      </IconWrapper>
+      <IconWrapper href='https://ca.linkedin.com/in/vkobay'>
         <Icon src={Linkedin} />
-      </a>
-      <a href='https://drive.google.com/file/d/1rAOD1xooPDD7h56dxwkl3K45H3wQFYv-/view?usp=sharing'>
+      </IconWrapper>
+      <IconWrapper href='https://drive.google.com/file/d/1rAOD1xooPDD7h56dxwkl3K45H3wQFYv-/view?usp=sharing'>
         <Icon src={Resume}/>
-      </a>
+      </IconWrapper>
     </Wrapper>
   )
 }
