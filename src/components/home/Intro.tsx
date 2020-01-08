@@ -17,6 +17,16 @@ const Container = styled.div`
   margin-right: 10px;
   transition: all .5s ease-in-out;
 
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+
+  @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
   &:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }
@@ -43,6 +53,7 @@ const Name = styled.p`
 
 const Subtext = styled.p`
   margin: 30px;
+  margin-top: 12px;
   font-weight: 300;
   font-size: 2.5vh;
   color: black;
@@ -62,8 +73,8 @@ const StyledDA = styled.img`
 const Intro = () => {
   return (
     <Container>
-      <Name>victor kobayashi</Name>
-      <Subtext>cs @ uwaterloo</Subtext>
+      <Name>victor <span style={{'color': '#2196f3'}}>kobayashi</span></Name>
+      <Subtext>3rd year CS @ UWaterloo</Subtext>
       <Contact/>
       <a href='#experience'>
         <StyledDA src={DA} />
