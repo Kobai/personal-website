@@ -18,6 +18,10 @@ const Container = styled.div`
     font-size: 20px;
   }
 
+  @media only screen and (max-width: 600px) {
+    width: 95%;
+  }
+
   .pound {
     border-bottom: 2px solid transparent;
     transition : border-bottom 200ms ease-out;
