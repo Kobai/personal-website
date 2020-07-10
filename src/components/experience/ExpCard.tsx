@@ -5,9 +5,8 @@ import { expProps } from '../../schema'
 
 const Container = styled.div`
   width: 70%;
-  margin: 20px;
-  background: white;
-  box-shadow: 0 5px 5px 0 rgba(154,160,185,.05), 0 5px 30px 0 rgba(166,173,201,.22);
+  // background: white;
+  // box-shadow: 0 5px 5px 0 rgba(154,160,185,.05), 0 5px 30px 0 rgba(166,173,201,.22);
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -70,6 +69,7 @@ const Description = styled.p`
   font-size: 18px;
   width: 90%;
   color: #212121; 
+  margin-bottom: -12px;
   @media only screen and (max-width: 1000px) {
     font-size: 16px;
   }
@@ -95,7 +95,7 @@ const ExpCard = (props: expProps) => {
           {props.description}
         </Description>
         {props.accomplishments && (
-          <ul>{bulletPoints}</ul>
+          <ul style={{'paddingLeft': '16px'}}>{bulletPoints}</ul>
         )}
       </TextContainer>
     </Container>

@@ -45,7 +45,7 @@ const Contact = () => {
       <IconWrapper href='https://ca.linkedin.com/in/vkobay'>
         <Icon src={Linkedin} />
       </IconWrapper>
-      <IconWrapper href='https://drive.google.com/file/d/1vG-16ZmG6j3nqwBsQTfU4iO5NXuRpEMD/view?usp=sharing'>
+      <IconWrapper href='https://github.com/Kobai/resume/blob/master/resume_cv.pdf'>
         <Icon src={Resume}/>
       </IconWrapper>
     </Wrapper>

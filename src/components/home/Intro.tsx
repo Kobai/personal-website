@@ -6,9 +6,9 @@ import DA from '../../assets/img/da.png'
 const Container = styled.div`
   margin-top: -100px;
   background: rgba(255, 255, 255, 0.95);
-  border: solid 1px #fefefe;
-  box-shadow: 0 5px 5px 0 rgba(154,160,185,.05), 0 5px 30px 0 rgba(166,173,201,.22);
-  background: white;
+  // border: solid 1px #fefefe;
+  // box-shadow: 0 5px 5px 0 rgba(154,160,185,.05), 0 5px 30px 0 rgba(166,173,201,.22);
+  // background: white;
   border-radius: 10px;
   text-align: center;
   padding-left: 100px;
@@ -28,7 +28,7 @@ const Container = styled.div`
   }
 
   &:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 5px 5px 0 rgba(154,160,185,.05), 0 5px 30px 0 rgba(166,173,201,.22);
   }
 
   @media only screen and (max-width: 1000px) {

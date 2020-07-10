@@ -7,11 +7,9 @@ import { expProps } from '../schema'
 
 const Frame = styled.div`
   height: 100%;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #f9faff;
   padding-bottom: 100px;
 `
 
