@@ -33,7 +33,7 @@ const Icon = styled.img`
     opacity: 1;
     animation-name: fadeIn;
     animation-duration: 0.1s;
-  }
+  }kSlfPsf
 `
 
 const Contact = () => {
