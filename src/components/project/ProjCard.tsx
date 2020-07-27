@@ -11,7 +11,7 @@ const Container = styled.div`
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  transition: all 2s ease-in-out;
+  transition: all .2s ease-in-out;
   text-align: left
 
   a {
