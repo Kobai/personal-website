@@ -27,9 +27,9 @@ const Container = styled.div`
       to   { opacity: 1; }
   }
 
-  &:hover {
-    box-shadow: 0 5px 5px 0 rgba(154,160,185,.05), 0 5px 30px 0 rgba(166,173,201,.22);
-  }
+  // &:hover {
+  //   box-shadow: 0 5px 5px 0 rgba(154,160,185,.05), 0 5px 30px 0 rgba(166,173,201,.22);
+  // }
 
   @media only screen and (max-width: 1000px) {
     padding-left: 40px;

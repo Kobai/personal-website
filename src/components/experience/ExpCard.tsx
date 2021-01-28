@@ -5,17 +5,14 @@ import { expProps } from '../../schema'
 
 const Container = styled.div`
   width: 70%;
-  // background: white;
-  // box-shadow: 0 5px 5px 0 rgba(154,160,185,.05), 0 5px 30px 0 rgba(166,173,201,.22);
-  border-radius: 10px;
+  border-left: 3px solid white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  transition: all .2s ease-in-out;
+  transition: all .4s ease-in-out;
 
   &:hover {
-    // box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    box-shadow: 0 5px 5px 0 rgba(154,160,185,.2);
+    border-left: 3px solid #2196f3;
   }
 
   @media only screen and (max-width: 1000px) {
