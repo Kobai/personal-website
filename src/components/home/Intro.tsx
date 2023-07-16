@@ -74,7 +74,7 @@ const Intro = () => {
   return (
     <Container>
       <Name>victor <span style={{'color': '#2196f3'}}>kobayashi</span></Name>
-      <Subtext>3rd year CS @ UWaterloo</Subtext>
+      <Subtext>Data @ Super</Subtext>
       <Contact/>
       <a href='#experience'>
         <StyledDA src={DA} />
